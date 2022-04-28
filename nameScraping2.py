@@ -25,6 +25,43 @@ def logInToLinkedIn():
 
 logInToLinkedIn()
 
+def searchAndFetchNames(letters):
+    names = []
+    pageCount = 1
+    for i in range(len(letters)):
+        searchBar = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.search-global-typeahead__input')))
+        searchBar.send_keys(letters[i])
+        searchBar.send_keys(Keys.RETURN)
+        if i == 0:
+            time.sleep(5)
+            peopleButton = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/section/div/nav/div/ul/li/button[contains(@aria-label, "People")]')))
+            peopleButton.click()
+        usersList = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/div/div[1]/main/div/div/div[2]/ul')))
+        userResults = usersList.find_elements_by_tag_name('li')
+        # print(userResults)
+
+        currentPageNames = []
+        for user in userResults:
+            currentPageNames.append(user.find_elements_by_css_selector('div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > a:nth-child(1) > span:nth-child(1) > span:nth-child(1)'))
+
+        # Moving to the next page
+        if len(currentPageNames) >= 10:
+            for i in range(len(currentPageNames)):
+                names.append(currentPageNames[i][0].text)
+                pageCount+=1
+            #TODO: Go to next page here, and increase page count. Then clear currentPageNames
+            if pageCount <= 2:
+                nextButton = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/div/div[1]/main/div/div/div[5]/div/div/ul/li[{}]/button'.format(pageCount))))
+                nextButton.click()
+            else:
+                nextButton = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/div/div[1]/main/div/div/div/div[2]/div/ul/li[{}]/button'.format(pageCount))))
+                nextButton.click()
+            currentPageNames.clear()
+
+        time.sleep(5)
+        searchBar.clear()
+        break
 
 
-driver.quit()
+searchAndFetchNames(letters)
+# driver.quit()
