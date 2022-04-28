@@ -1,0 +1,52 @@
+1651044148843	geckodriver	INFO	Listening on 127.0.0.1:61256
+1651044151933	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61257" "-no-remote" "-profile" "C:\\Users\\hasan\\AppData\\Local\\Temp\\rust_mozprofileeryWuv"
+1651044152188	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hasan\\AppData\\Local\\Temp\\rust_mozprofileeryWuv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61257/devtools/browser/3ca2b3a1-9574-4913-bdc5-d80b1edbdd86
+1651044154257	Marionette	INFO	Listening on port 61262
+1651044154615	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651044154629	Marionette	INFO	Stopped listening on port 61262
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1651044196188	geckodriver	INFO	Listening on 127.0.0.1:61291
+1651044199255	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61292" "-no-remote" "-profile" "C:\\Users\\hasan\\AppData\\Local\\Temp\\rust_mozprofile3yoQop"
+1651044199508	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hasan\\AppData\\Local\\Temp\\rust_mozprofile3yoQop\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:61292/devtools/browser/2f485e05-6a27-42f1-97b4-f8cb42285c32
+1651044201567	Marionette	INFO	Listening on port 61297
+1651044201898	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://static-exp1.licdn.com/sc/h/6mzfdgdkyw015zjnbi8yad3ql, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/etkd25e7kzp2lrg1w9y0kixlu
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://static-exp1.licdn.com/sc/h/6mzfdgdkyw015zjnbi8yad3ql, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/98lptr8kagfxge22q7k1fps8
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5x551rv91h1545imm4yjueanc, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5x551rv91h1545imm4yjueanc, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/3e93t9ar6rmxria76mbp4w1h4, line 6983: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/3e93t9ar6rmxria76mbp4w1h4, line 19059: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jqdpbzdxeaq3ocwuxuywv9w4, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/7tqfefxcivh787nr95txyvj0v, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/93cp30weqh13npup0dtq6m7xl, line 2516: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/3e93t9ar6rmxria76mbp4w1h4, line 19059: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/7sx10zmow2bm6rwyblpqqbec8, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3fowrvmexk138cdswemlxztq, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/4t9v9hxs3ht8o070vohgrctq1, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/4awwdfwd8npdai1t7l7dh895w, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/dukntjt98g582fv9bxijnhu9s, line 6: unreachable code after return statement
+1651044211531	Marionette	INFO	Stopped listening on port 61297
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1651044357691	geckodriver	INFO	Listening on 127.0.0.1:49366
+1651044360758	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49367" "-no-remote" "-profile" "C:\\Users\\hasan\\AppData\\Local\\Temp\\rust_mozprofileMvAgjZ"
+1651044361009	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\hasan\\AppData\\Local\\Temp\\rust_mozprofileMvAgjZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49367/devtools/browser/b078cba3-8f1e-4370-acaa-664fb1c90dd5
+1651044362939	Marionette	INFO	Listening on port 49372
+1651044363407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651044363422	Marionette	INFO	Stopped listening on port 49372
