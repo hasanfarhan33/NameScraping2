@@ -45,6 +45,9 @@ def seeIfAnElementExistsOrNot(elementName):
     else:
         print("Nah man, you blind")
 
+def searchErrorFix():
+    failurePageDiv = driver.find_elements_by_css_selector('.search-no-results.display-flex.flex-column.align-items-center')
+    return len(failurePageDiv)
 
 #TODO: Handle unable to search error
 def searchAndFetchNames(letters):
@@ -62,7 +65,10 @@ def searchAndFetchNames(letters):
 
         while pageCount <= 100:
             time.sleep(5)
-            usersList = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/div/div[1]/main/div/div/div[1]/ul')))
+            if pageCount <= 1:
+                usersList = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/div/div[1]/main/div/div/div[2]/ul')))
+            else:
+                usersList = wait.until(EC.presence_of_element_located((By.XPATH, '/html/body/div[6]/div[3]/div[2]/div/div[1]/main/div/div/div/ul')))
             userResults = usersList.find_elements_by_tag_name('li')
             # print("User Results:", userResults)
 
